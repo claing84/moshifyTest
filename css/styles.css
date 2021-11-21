@@ -40,6 +40,7 @@ h2,
 h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -284,7 +285,7 @@ a {
     color: var(--color-headings);
 }
 
-::placeholder {
+ ::placeholder {
     color: #cdcbd7;
     font-size: 2rem;
 }
@@ -668,6 +669,10 @@ a {
     border-radius: 5px;
 }
 
+.nav__brand {
+    transform: translateY(5px);
+}
+
 @media screen and (min-width: 768px) {
     .nav__toggler {
         display: none;
@@ -684,6 +689,30 @@ a {
     }
 }
 
-.nav__brand {
-    transform: translateY(5px);
+
+/* Heros (Banners) */
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin-top: 2rem 0 5rem;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+.hero {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 0;
+    }
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
 }
