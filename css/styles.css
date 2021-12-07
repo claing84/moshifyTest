@@ -503,6 +503,10 @@ a {
 /* Grids */
 
 .grid {
+    display: grid;
+}
+
+.grid-plan {
     display: flex;
 }
 
